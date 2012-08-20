@@ -1,0 +1,11 @@
+{
+  "name": "ctrl-www",
+  "version": "0.0.0",
+  "private": "true",
+  "main": "build.js",
+  "dependencies": {
+    "jade": "0.27",
+    "stylus": "0.29",
+    "nib": "0.7"
+  }
+}
