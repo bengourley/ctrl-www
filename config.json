@@ -1,4 +1,14 @@
-{ "pages": [{ "template": "index" }]
+{ "pages":
+  [ { "template": "index"}
+  , { "template": "about"}
+  , { "template": "docs"}
+  , { "template": "community"}
+  ]
 , "stylesheets": ["screen"]
-, "routes": {"/": "index"}
+, "routes":
+  { "/": "index"
+  , "/about.html": "about"
+  , "/docs.html": "docs"
+  , "/community.html": "community"
+  }
 }
