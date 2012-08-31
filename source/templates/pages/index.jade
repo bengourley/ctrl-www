@@ -1,6 +1,11 @@
-!!!5
-html
-  head
-    title Ctrl!
-  body
-    p Hello, World!
+extends ../layouts/default
+
+block title
+  | Home
+
+block content
+  p Hello world
+
+append js
+  script
+    console.log('hello!')
