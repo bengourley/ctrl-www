@@ -1,0 +1,8 @@
+body {
+  width: 500px;
+  margin: 0 auto;
+  font-family: Georgia;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  color: #f00;
+}
