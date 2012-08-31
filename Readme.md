@@ -12,8 +12,6 @@ changes while in development), first install nodemon:
 npm install -g nodemon
 ```
 
-```
-
 Then in the project route do:
 
 ```
