@@ -1,12 +1,155 @@
 @import nib
 
-body
-  width 500px
-  margin 0 auto
-  font-family Georgia
-  font-size 15px
+black = #000304
+blue = #05222b
+white = #f4f4f4
+red = #7a2f3c
+lightgrey = #a8a8a8
+mediumgrey = #c0c6c8
+darkgrey = #373737
 
+*
+  margin 0
+  padding 0
+  -webkit-font-smoothing subpixel-antialiased
+
+body
+  font-family 'Gotham Light' // TODO @ff this bitch
+  font-size 15px
+  line-height 1.2
+  background-color blue
+  color gray
+  padding-top 47px
+
+.body-copy
+  font-family 'Helvetica'
+  line-height 1.8
+  font-size 14px
+  overflow hidden
+
+  p
+  ul
+  ol
+  blockquote
+    margin-bottom 20px
+
+.left-col
+  float left
+  width 430px
+
+.right-col
+  float right
+  width 430px
+
+header
+  background-color black
+  height 47px
+  position fixed
+  top 0
+  left 0
+  width 100%
+  z-index 100
+
+.main-nav
+  text-align center
+
+  li
+    display inline
+
+  a
+    display inline-block
+    color lightgrey
+    text-decoration none
+    text-transform uppercase
+    font-size 12px
+    padding 17px 14px
+    margin 0px 10px
+
+    &:hover
+      text-decoration underline
+
+.main-content
+  border-top 1px solid desaturate(lighten(blue, 12%), 50%)
+
+.section
+  padding 80px 0px
+
+.section-white
+  background-color white
+  color darkgrey
+
+  .section-title
+    color blue
+
+.section-red
+  background-color red
+  color white
+
+.section-title
+  display inline-block
+  border-top 1px solid rgba(mediumgrey, 0.5)
+  border-bottom 1px solid rgba(mediumgrey, 0.5)
+  padding 20px 0px
+  font-size 25px
+  margin-bottom 40px
+
+.contain
+  width 960px
+  margin 0 auto
+  position relative
 
 footer
   border-top 1px solid #ddd
   font-size 13px
+
+.gh-source
+  position absolute
+  top -120px
+  right 0px
+  height 167px
+  width 144px
+  background-image url('/public/images/gh-hex.png')
+  z-index 200
+
+  span
+    color white
+    text-decoration none
+    width 80px
+    position absolute
+    bottom 50px
+    left 28px
+    text-align center
+    font-size 12px
+    line-height 13px
+
+  &:hover
+    animation bounce 0.3s ease-in-out
+    span
+      text-decoration underline
+
+@keyframes bounce
+  0%
+    transform translateY(0)
+  25%
+    transform translateY(5px)
+  75%
+    transform translateY(-5px)
+  100%
+    transform translateY(0px)
+
+.intro-rotator
+  height 540px
+  position relative
+
+  .page
+    position absolute
+
+  .page-one
+    text-align center
+    padding-top 130px
+    width 100%
+
+  .intro-title
+    font-size 40px
+    text-transform lowercase
+    margin-top 70px
