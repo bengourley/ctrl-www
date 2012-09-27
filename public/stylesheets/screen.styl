@@ -13,6 +13,9 @@ darkgrey = #373737
   padding 0
   -webkit-font-smoothing subpixel-antialiased
 
+img
+  vertical-align baseline
+
 body
   font-family 'Gotham Light' // TODO @ff this bitch
   font-size 15px
@@ -62,11 +65,16 @@ header
     text-decoration none
     text-transform uppercase
     font-size 12px
-    padding 17px 14px
+    padding 15px 14px
     margin 0px 10px
+    position relative
 
     &:hover
       text-decoration underline
+
+    img
+      position absolute
+      top 18px
 
 .main-content
   border-top 1px solid desaturate(lighten(blue, 12%), 50%)

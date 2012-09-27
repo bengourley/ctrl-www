@@ -3,6 +3,9 @@
   padding: 0;
   -webkit-font-smoothing: subpixel-antialiased;
 }
+img {
+  vertical-align: baseline;
+}
 body {
   font-family: 'Gotham Light';
   font-size: 15px;
@@ -52,11 +55,16 @@ header {
   text-decoration: none;
   text-transform: uppercase;
   font-size: 12px;
-  padding: 17px 14px;
+  padding: 15px 14px;
   margin: 0px 10px;
+  position: relative;
 }
 .main-nav a:hover {
   text-decoration: underline;
+}
+.main-nav a img {
+  position: absolute;
+  top: 18px;
 }
 .main-content {
   border-top: 1px solid #203e49;
